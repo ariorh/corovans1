@@ -86,7 +86,7 @@ export default class GameScene extends Phaser.Scene {
 
   createUI() {
     // Время
-    this.timeText = this.add.text(20, 20, 'Время: 0:00', {
+    this.timeText = this.add.text(20, 20, 'Time: 0:00', {
       fontSize: '20px',
       color: '#333',
     });
@@ -139,7 +139,7 @@ export default class GameScene extends Phaser.Scene {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
     this.timeText.setText(
-      `Время: ${minutes}:${remainingSeconds.toString().padStart(2, '0')}`
+      `Time: ${minutes}:${remainingSeconds.toString().padStart(2, '0')}`
     );
 
     this.cityCountText.setText(`Города: ${this.cities.length}`);
@@ -172,7 +172,7 @@ export default class GameScene extends Phaser.Scene {
       .setOrigin(0.5);
 
     const timeText = this.add
-      .text(640, 380, `Время: ${Math.floor(this.gameTime / 1000)} секунд`, {
+      .text(960, 570, `Time: ${Math.floor(this.gameTime / 1000)} seconds`, {
         fontSize: '24px',
         color: '#fff',
       })

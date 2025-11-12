@@ -9,6 +9,17 @@ const config = {
   parent: 'game-container',
   backgroundColor: GAME_CONFIG.COLORS.background,
   scene: [GameScene],
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+    width: GAME_CONFIG.width,
+    height: GAME_CONFIG.height,
+  },
+  render: {
+    pixelArt: false,
+    antialias: true,
+    roundPixels: false,
+  },
 };
 
 const game = new Phaser.Game(config);
