@@ -1,8 +1,8 @@
 // Константы игры
 export const GAME_CONFIG = {
   // Размеры
-  width: 1280,
-  height: 720,
+  width: 1920,
+  height: 1080,
 
   // Производство
   PRODUCTION_INTERVAL: 5000, // мс
